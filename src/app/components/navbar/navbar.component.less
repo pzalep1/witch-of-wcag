@@ -1,0 +1,56 @@
+@import "../../../styles.less"; 
+
+.skip-link {
+  left: -100px;
+  position: absolute;
+  top: auto;
+  width: 0;
+  height: 0;
+  z-index: -1;
+}
+
+.skip-link:focus, .skip-link:active {
+  color: @navbar-grey;
+  background-color: white;
+  left: auto;
+  width: 25%;
+  height: auto;
+  overflow:auto;
+  margin: 10px;
+  padding:5px;
+  text-align:center;
+  font-size: 16px;
+  z-index:999;
+}
+// fixed position nav bar
+.topbar {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  height: 150px;
+  background:@navbar-grey;
+  color: white;
+  overflow: hidden;
+  box-shadow: 0px 8px 15px @dark-grey;
+
+  .logo {
+      padding: 10px;
+  }
+
+  .navigation-bar {
+      padding: 50px;
+      display: inline;
+
+      .nav-link {
+          color: white;
+          padding: 20px;
+          font-size: @larger;
+          text-decoration: none;
+          font-weight: bold;
+      }
+  }
+}
+
+  
+   
