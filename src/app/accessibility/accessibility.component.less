@@ -1,0 +1,45 @@
+@import '../../styles.less';
+.content {
+    padding: 20px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+
+    &.left {
+        flex: 3;
+        background-color: white;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    &.right {
+        flex: 15;
+        padding-top: 20px;
+        background-color: white;
+        border-radius: 8px;
+        margin-right: 20px;
+        margin-left: 20px;
+
+        .webcontent {
+            padding: 20px;
+        }
+    }
+}
+
+.title {
+    font-size: @larger;
+    margin: 0px;
+    padding: 0px;
+}
+
+.button {
+    margin: 5px;
+}

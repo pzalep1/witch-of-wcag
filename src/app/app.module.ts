@@ -11,6 +11,7 @@ import { TeamPageComponent } from './team-page/team-page.component';
 import { ContactComponent } from './contact/contact.component';
 import { AccessibilityComponent } from './accessibility/accessibility.component';
 import { LibraryComponent } from './library/library.component';
+import { SkipLinksComponent } from './accessibility/skip-links/skip-links.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LibraryComponent } from './library/library.component';
     TeamPageComponent,
     ContactComponent,
     AccessibilityComponent,
-    LibraryComponent
+    LibraryComponent,
+    SkipLinksComponent
   ],
   imports: [
     BrowserModule,
